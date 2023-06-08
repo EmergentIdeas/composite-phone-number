@@ -31,9 +31,11 @@ function compositePhoneNumber(elm) {
 	
 	let content =
 `
-		(<input class="phone-area-code" aria-label="${label} area code" type="text" size="3" maxlength="3" pattern="[0-9]{3}" ${requiredText} />) 
+		<span class="area-code-section">
+		<span class="left-paren">(</span><input class="phone-area-code" aria-label="${label} area code" type="text" size="3" maxlength="3" pattern="[0-9]{3}" ${requiredText} /><span class="right-paren">)</span> 
+		</span>
 		<input class="phone-prefix" aria-label="${label} prefix" type="text" size="3" maxlength="3" pattern="[0-9]{3}" ${requiredText} /> 
-		-
+		<span class="phone-hyphen">-</span>
 		<input class="phone-line-number" aria-label="${label} line number" size="4" maxlength="4" type="text" pattern="[0-9]{4}" ${requiredText} /> 
 		
 `
