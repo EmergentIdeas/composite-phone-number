@@ -34,7 +34,7 @@ line number when they have entered the correct number of digits.
 Install like:
 
 ```
-npm install @dankolz/composite-phone-number
+npm install composite-phone-number
 ```
 
 ## Usage
@@ -42,7 +42,7 @@ npm install @dankolz/composite-phone-number
 Use like:
 
 ```
-const compositePhoneNumber = require('@dankolz/composite-phone-number')
+const compositePhoneNumber = require('composite-phone-number')
 compositePhoneNumber(document.querySelector('#phone'))
 ```
 
