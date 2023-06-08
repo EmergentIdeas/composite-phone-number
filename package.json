@@ -1,6 +1,6 @@
 {
 	"name": "composite-phone-number",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "",
 	"main": "client-js/index.js",
 	"scripts": {
@@ -40,7 +40,8 @@
 	},
 	"dependencies": {
 		"@dankolz/escape-html-attribute-value": "^1.0.0",
-		"@dankolz/label-text-for-element": "^1.0.0"
+		"@dankolz/label-text-for-element": "^1.0.0",
+		"digits-only": "^1.0.0"
 	},
 	"browserify": {
 		"transform": [

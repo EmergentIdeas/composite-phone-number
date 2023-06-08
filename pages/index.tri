@@ -9,9 +9,9 @@ __::start__
 			<input id="five" name="five" type="text" />
 		</label>
 		<br />
-		<input id="six" name="six" aria-label="six" type="text" value="1234" />
+		<input id="six" name="six" aria-label="six" type="text" value="(123) 441-123" />
 		<br />
-		<input id="seven" name="seven" type="text" value="1234567890" />
+		<input id="seven" name="seven" type="text" value="1234a56b7890" />
 		<br />
 		<input id="eight" name="eight" type="text" value="1234567890123" />
 		<br />

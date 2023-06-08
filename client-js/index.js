@@ -1,6 +1,6 @@
 const labelTextForElement = require('@dankolz/label-text-for-element')
 const esc = require('@dankolz/escape-html-attribute-value')
-
+const digitsOnly = require('digits-only')
 
 /**
  * Takes an input element and creates a set of three fields for phone
@@ -41,11 +41,10 @@ function compositePhoneNumber(elm) {
 `
 	phoneNumberParts.innerHTML = content
 	
-	let currentValue = elm.value
+	let currentValue = digitsOnly(elm.value)
 	phoneNumberParts.querySelector('.phone-area-code').value = currentValue.substring(0, 3)
 	phoneNumberParts.querySelector('.phone-prefix').value = currentValue.substring(3, 6)
 	phoneNumberParts.querySelector('.phone-line-number').value = currentValue.substring(6, 10)
-	
 
 	function recordValue() {
 		let val = ''
